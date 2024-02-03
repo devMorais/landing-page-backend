@@ -1,0 +1,159 @@
+header{
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Estilo do cabeçalho (header) */
+header .conteudo {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0px;  /* Adiciona espaço interno de 20px acima e abaixo */
+}
+
+/* Estilo do logotipo no cabeçalho */
+header .conteudo .logo {
+    width: 155px;
+}
+
+/* Estilo do menu lateral (inicialmente oculto) */
+header .conteudo .menu-lateral {
+    position: absolute;
+    left: calc(-100vw - 100px);
+    top: 0px;
+    width: calc(100vw - 100px);
+    height: 150vw;
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #424242;
+    transition: .4s;  /* Adiciona transição suave de 0.4 segundos */
+}
+
+/* Estilo do menu lateral quando está ativo (visível) */
+header .conteudo .menu-lateral.active {
+    left: 0px;
+}
+
+/* Estilo da navegação no menu lateral */
+header .conteudo .menu-lateral .nav {
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Estilo de cada item da navegação no menu lateral */
+header .conteudo .menu-lateral .nav li {
+    position: relative;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+/* Adiciona um efeito de linha sob o item da navegação ao passar o mouse */
+header .conteudo .menu-lateral .nav li:after {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 3px;
+    background-color: #fff;
+    content: ' ';
+    transition: .4s;
+}
+
+/* Expande a linha ao passar o mouse sobre o item da navegação */
+header .conteudo .menu-lateral .nav li:hover:after {
+    width: 100%;
+}
+
+/* Estilo das redes sociais no menu lateral */
+header .conteudo .menu-lateral .redes-socias {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo dos links das redes sociais no menu lateral */
+header .conteudo .menu-lateral .redes-socias a {
+    margin-left: 14px;
+}
+
+/* Estilo dos ícones nas redes sociais no menu lateral */
+header .conteudo .menu-lateral .redes-socias a i {
+    font-size: 20px;
+}
+
+/* Estilo do ícone de barra de navegação no cabeçalho */
+header .conteudo .nav-bar {
+    width: 40px;
+    height: 40px;
+}
+
+/* Estilo do ícone dentro da barra de navegação */
+header .conteudo .nav-bar i {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* Mídia query para telas maiores (min-width: 1024px) */
+@media only screen and (min-width: 1024px) {
+    /* Oculta a barra de navegação em telas maiores */
+    header .conteudo .nav-bar {
+        display: none;
+    }
+
+    /* Ajusta o estilo do menu lateral para telas maiores */
+    header .conteudo .menu-lateral {
+        width: calc(100% - 245px);
+        display: inline-flex;
+        justify-content: flex-end;
+        position: relative;
+        background-color: transparent;
+        flex-direction: row;
+        height: auto;
+        left: initial;
+        top: initial;
+    }
+
+    /* Ajusta o estilo da navegação no menu lateral para telas maiores */
+    header .conteudo .menu-lateral .nav {
+        flex-direction: row;
+        padding: 0px;
+    }
+
+    /* Ajusta o estilo de cada item da navegação no menu lateral para telas maiores */
+    header .conteudo .menu-lateral .nav li {
+        margin-left: 30px;
+        position: relative;
+        width: max-content;
+    }
+
+    /* Remove a margem do primeiro item da navegação no menu lateral para telas maiores */
+    header .conteudo .menu-lateral .nav li:first-child {
+        margin-left: 0px;
+    }
+
+    /* Ajusta o estilo das redes sociais no menu lateral para telas maiores */
+    header .conteudo .menu-lateral .redes-socias {
+        margin-left: 35px;
+        width: max-content;
+    }
+}
+
+/* Mídia query para telas muito grandes (min-width: 1300px) */
+@media only screen and (min-width: 1300px) {
+    /* Ajusta a margem esquerda dos itens de navegação no menu lateral para telas muito grandes */
+    header .conteudo .menu-lateral .nav li {
+        margin-left: 90px;
+    }
+
+    /* Ajusta a margem esquerda das redes sociais no menu lateral para telas muito grandes */
+    header .conteudo .menu-lateral .redes-socias {
+        margin-left: 80px;
+    }
+}

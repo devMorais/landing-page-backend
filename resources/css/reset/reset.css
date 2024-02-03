@@ -1,0 +1,155 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: #000;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+a{
+	color: #fff;
+	text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input, textarea, button{
+	outline: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+
+.container{
+	width: 100%;
+	max-width: 1510px;
+	padding: 0px 30px;
+	display: block;
+	margin: 0 auto;
+}
+
+.btn{
+	width: max-content;
+	display: block;
+	margin: 0;
+	border: 2px solid #fff;
+	border-radius: 30px;
+	padding: 15px 40px;
+	line-height: 1;
+	transition: .4s;
+	background-color: transparent;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.btn:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+.titulo_principal{
+	font-size: 36px;
+	font-weight: 500;
+	font-style: italic;
+	display: block;
+	margin: 0 auto;
+	width: max-content;
+	position: relative;
+}
+
+.titulo_principal:after{
+	width: 100%;
+	height: 4px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -10px;
+	left: 0px;
+	content: ' ';
+}
+
+.titulo_principal.black{
+	color: #000;
+}
+
+.titulo_principal.black:after{
+	background-color: #000;
+}
+
+@media only screen and (min-width: 1024px) {
+	.titulo_principal{
+		font-size: 48px;
+	}
+}
+
+.slick-dots{
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
+	bottom: -52px;
+	flex-wrap: wrap;
+}
+
+.slick-dots li{
+	margin-right: 9px;
+}
+
+.slick-dots li:last-child{
+	margin-right: 0px;	
+}
+
+
+.slick-dots li button{
+	background-color: white;
+	border: 1px solid #000;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	color: white;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.slick-dots li.slick-active button{
+	background-color: #000;
+	color: #000;
+}
