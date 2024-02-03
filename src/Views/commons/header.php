@@ -26,6 +26,9 @@
     <link rel="shortcut icon" href="" type="image/x-icon" />
 
     <title><?=$data['informacoes']?></title>
+    <link href="<?=URL_BASE?>resources/css/fonts/fontawesome/css/all.min.css?v=<?=time()?>" rel="stylesheet"/>
+    <link href="<?=URL_BASE?>resources/css/slick-theme.css?v=<?=time()?>" rel="stylesheet"/>
+    <link href="<?=URL_BASE?>resources/css/slick.css?v=<?=time()?>" rel="stylesheet"/>
 
     <link href="<?=URL_BASE?>resources/css/css.css?v=<?=time()?>" rel="stylesheet"/>
 <body>
