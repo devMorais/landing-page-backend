@@ -6,26 +6,26 @@
     <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
     <base href="<?=URL_BASE?>">
 
-    <meta name="title" content="">
-    <meta name="description" content=""/>
-    <meta name="author" content=""/>
+    <meta name="title" content="<?=$data['informacoes']['title']?>">
+    <meta name="description" content="<?=$data['informacoes']['description']?>"/>
+    <meta name="author" content="<?=$data['informacoes']['author']?>"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="robots" content="index, follow">
-    <meta name="url" content="<?=URL_BASE?>" />
+    <meta name="url" content="<?=$data['informacoes']['url']?>" />
     
     <meta property="og:locale" content="pt_BR" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="<?=$data['informacoes']['site_name']?>" />
+    <meta property="og:title" content="<?=$data['informacoes']['title']?>" />
+    <meta property="og:description" content="<?=$data['informacoes']['description']?>" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="<?=URL_BASE?>" />
-    <meta property="og:image" content="" />
-    <meta property="og:image:alt" content="" />
+    <meta property="og:url" content="<?=$data['informacoes']['url']?>" />
+    <meta property="og:image" content="<?=$data['informacoes']['image']?>" />
+    <meta property="og:image:alt" content="<?=$data['informacoes']['image_alt']?>" />
 
-    <link rel="icon" href="" type="image/x-icon">
-    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="icon" href="<?=URL_BASE?>resources/imagens/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="<?=URL_BASE?>resources/imagens/logo.png" type="image/x-icon" />
 
-    <title><?=$data['informacoes']?></title>
+    <title><?=$data['informacoes']['title']?></title>
     <link href="<?=URL_BASE?>resources/css/fonts/fontawesome/css/all.min.css?v=<?=time()?>" rel="stylesheet"/>
     <link href="<?=URL_BASE?>resources/css/slick-theme.css?v=<?=time()?>" rel="stylesheet"/>
     <link href="<?=URL_BASE?>resources/css/slick.css?v=<?=time()?>" rel="stylesheet"/>
@@ -47,10 +47,10 @@
                             <a href="#eventos">Projetos</a>
                         </li>
                         <li>
-                            <a href="#cursos"> Certificados</a>
+                            <a href="#cursos">Vídeos</a>
                         </li>
                         <li>
-                            <a href="#videos">Vídeos</a>
+                            <a href="#videos">Design</a>
                         </li>
                         <li>
                             <a href="#fale-comigo">Fale comigo</a>

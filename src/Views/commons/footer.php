@@ -2,7 +2,7 @@
 		<div class="container">
 			<div class="conteudo">
 				<p>Todos os direitos reservados</p>
-				<p>Desenvolvido por <a href="#">DevMorais <i class="fab fa-instagram"></i></a></p>
+				<p>Desenvolvido por DevMorais <a href="https://www.instagram.com/aguiarc.morais/" target="_blank"DevMoraistarget="_blank"><i class="fa-brands fa-instagram"></i></a></p>
 			</div>
 		</div>
 	</footer>

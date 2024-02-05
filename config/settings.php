@@ -13,4 +13,4 @@ define('URL_BASE', 'http://localhost'.DIRETORIO_PRINCIPAL.'/');
 define('SQL_DB_SERVER', 'localhost');
 define('SQL_DB_USER', 'root');
 define('SQL_DB_PASS', '');
-define('SQL_DB_DATABASE', 'nome_banco_de_dados');
+define('SQL_DB_DATABASE', 'landing_page');
